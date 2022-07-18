@@ -1,0 +1,61 @@
+@import '../../../colors.scss';
+@import '../../../mixins.scss';
+
+.heading {
+    color: $text-color;
+    text-align: center;
+    padding-top: 5vh;
+    font-size: 25px;
+    font-family: $main-font;
+}
+
+.info-panel{
+    margin-top: 180px;
+    background-color: $secondary-color;
+    color: $text-color;
+    text-align: center;
+    font-size: 25px;
+    font-family: $main-font;
+}
+
+.social-media-content {
+    padding-top: 10vh;
+    ul {
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 5vh 5vh;
+        cursor: pointer;
+    }
+
+    fa-icon {
+        color: $accent-color;
+        font-size: 40px;
+    }
+
+    fa-icon:hover {
+        color: $hover-color;
+    }
+}
+
+.btn-container {
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    @include btn;
+}
+
+.btn:hover {
+    background-color: $secondary-color;
+    transition: .3s;
+}

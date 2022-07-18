@@ -1,0 +1,40 @@
+@import './colors.scss';
+
+@mixin btn {
+    background-color: $accent-color;
+    border-radius: 12px;
+    border-style: none;
+    box-sizing: border-box;
+    color: $text-color;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    width: 130px;
+    line-height: 20px;
+    list-style: none;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+@mixin input {
+    width: 60%;
+    border: 2px solid $accent-color;
+    border-radius: 19px;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+    background-color: $secondary-color;
+    color: $text-color;
+}

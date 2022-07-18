@@ -1,0 +1,38 @@
+@import '../../../colors.scss';
+@import '../../../mixins.scss';
+
+.navbar {
+    margin: 20px 20px 20px 20px;
+}
+
+.logo {
+    width: 80px;
+}
+
+.btn-container {
+    float: right;
+    padding-top: 4vh;
+}
+
+.btn {
+    @include btn;
+}
+
+.btn:hover {
+    background-color: $hover-color;
+    transition: .3s;
+}
+
+.app-name {
+    color: $text-color;
+    font-family: cursive;
+    font-size: 52px;
+    font-weight: bold;
+    float: left;
+    padding-left: 4vh;
+    padding-top: 10px;
+}
+
+.logo-container {
+    float: left;
+}

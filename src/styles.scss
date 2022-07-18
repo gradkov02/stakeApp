@@ -1,0 +1,11 @@
+@import './colors.scss';
+
+
+body {
+    background-color: $main-color;
+    margin: 0;
+}
+
+::selection {
+    background-color: #C724B1;
+}

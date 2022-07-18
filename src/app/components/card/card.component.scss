@@ -1,0 +1,30 @@
+@import '../../../colors.scss';
+
+.card {
+    width: 210px;
+    height: 110px;
+    background-color: $secondary-color;
+    display: inline-block;
+    border-radius: 22px;
+    box-shadow: 1px 1px 1px 1px $hover-color;
+    -webkit-box-shadow: 1px 1px 1px 1px $hover-color;
+    transition: transform .5s;
+}
+
+.heading {
+    color: $text-color;
+    font-size: 17px;
+    font-family: $main-font;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1vh;
+    padding-top: 4vh;
+}
+
+.value {
+    color: $text-color;
+    font-size: 17px;
+    font-family: $main-font;
+    font-weight: bold;
+    text-align: center;
+}

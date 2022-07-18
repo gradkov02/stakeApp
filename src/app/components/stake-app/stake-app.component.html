@@ -1,0 +1,65 @@
+<div class="navbar">
+    <div class="logo-container">
+        <img class="logo" src="../../../assets/images/logo.png" alt="eggplant" />
+    </div>
+    <div class="app-name">
+        Eggplant
+    </div>
+    <div class="connect-btn-container">
+        <div class="btn" (click)="copyAddress()">
+            {{buttonText}}
+        </div>
+    </div>
+</div>
+
+<div class="app-info">
+    <app-card [value]="tvl" [additionalInfo]="'SNT'" [heading]="'Total value locked:'"></app-card>
+    <app-card [value]="taxFees" [additionalInfo]="'%'" [heading]="'Fee:'"></app-card>
+    <app-card [value]="callerBalance" [additionalInfo]="'SNT'" [heading]="'User balance:'"></app-card>
+    <app-card [value]="stakerBalance" [additionalInfo]="'SNT'" [heading]="'Staked amount:'"></app-card>
+</div>
+
+<div class="staking-section">
+    <div class="stake-window">
+        <div class="icon-container"><fa-icon [icon]="faPiggyBank"></fa-icon></div>
+        <div class="input-container">
+            <input type="number" min="0" placeholder="0" required [(ngModel)]="stakeInputValue">
+            <div class="max-option">
+                <div class="max" (click)="stakeMax()">Max</div>
+            </div>
+        </div>
+        <div class="btn-container">
+            <div class="stake-btn">
+                <div class="btn" style="margin-right: 3vh;" (click)="approve()">Approve</div>
+                <div class="btn" (click)="stake()">Deposit</div>
+            </div>
+        </div>
+    </div>
+    <div class="stake-window">
+        <div class="icon-container"><fa-icon [icon]="faMoneyBillTransfer"></fa-icon></div>
+        <div class="input-container">
+            <input type="number" min="0" placeholder="0" required [(ngModel)]="unstakeInputValue">
+            <div class="max-option">
+                <div class="max" (click)="unstakeMax()">Max</div>
+            </div>
+        </div>
+        <div class="btn-container">
+            <div class="stake-btn">
+                <div class="btn" (click)="unstake()">Withdraw</div>
+            </div>
+        </div>
+    </div>
+    <div class="stake-window">
+        <div class="icon-container"><fa-icon [icon]="faCoins"></fa-icon></div>
+        <div class="info-container">
+            <div class="text">Available rewards:</div>
+        </div>
+        <div class="amount">{{userRewards}} SNT</div>
+        <div class="btn-container">
+            <div class="stake-btn">
+                <div class="btn" (click)="claim()">Claim</div>
+            </div>
+        </div>
+    </div>
+</div>
+

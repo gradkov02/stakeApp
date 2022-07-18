@@ -1,0 +1,137 @@
+@import '../../../colors.scss';
+@import '../../../mixins.scss';
+
+.navbar {
+    margin: 20px 20px 20px 20px;
+}
+
+.logo {
+    width: 120px;
+    padding-left: 3vh;
+}
+
+.connect-btn-container {
+    float: right;
+    padding-top: 1vh;
+}
+
+.btn {
+    @include btn;
+}
+
+.btn:hover {
+    background-color: $hover-color;
+    transition: .3s;
+}
+
+.app-name {
+    color: $text-color;
+    font-family: cursive;
+    font-size: 52px;
+    font-weight: bold;
+    float: left;
+    padding-left: 64vh;
+    padding-top: 10px;
+}
+
+.logo-container {
+    float: left;
+}
+
+.app-info {
+    padding-top: 20vh;
+    padding-left: 20vh;
+    padding-bottom: 20vh;
+}
+
+app-card {
+    padding-right: 16vh;
+}
+
+.stake-btn { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+
+    .btn {
+        @include btn;
+    }
+    .btn:hover {
+        background-color: $hover-color;
+        transition: .3s;
+    }
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    
+    input {
+        @include input;
+    }
+
+    input:focus {
+        border-color: $hover-color;
+        box-shadow: 0 0 15px 0 $hover-color;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .max {
+        color: $text-color;
+        cursor: pointer;
+        font-family: $main-font;
+    }
+
+    .max:hover {
+        color: $hover-color;
+    }
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+    color: $text-color;
+    font-family: $main-font;
+    font-weight: bold;
+}
+
+.amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $text-color;
+    font-family: $main-font;
+    font-weight: bold;
+}
+
+
+.stake-window {
+    float: left;
+    background-color: $secondary-color;
+    border-radius: 19px;
+    width: 400px;
+    height: 250px;
+    margin-left: 10vh;
+    box-shadow: 4px 3px 8px 1px $hover-color;
+  	-webkit-box-shadow: 4px 3px 8px 1px $hover-color;
+
+    .icon-container {
+        text-align: center;
+        margin-top: 2vh;
+    
+        fa-icon {
+            color: $hover-color;
+            font-size: 50px;
+        }
+    }
+}
