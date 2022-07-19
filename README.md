@@ -1,4 +1,4 @@
-# Eggplant UI
+# Eggplant Staking App
 
 ## Development server
 
